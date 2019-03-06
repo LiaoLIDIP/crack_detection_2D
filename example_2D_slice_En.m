@@ -6,12 +6,12 @@ clc
 addpath('coherencefilter_version5b\')
 addpath('phasemap_v1.1\phasemap\')
 % load input image
-I = (imread('cameraman.tif'));            %fundus2D.png    1.jpg  cameraman.gif
+I = (imread('fundus2D.png'));            %fundus2D.png    1.jpg  cameraman.gif
 if size(I,3) == 3
     I = rgb2gray(I);
 end
 load my
-I = my;
+%I = my;
 figure,imshow(I);
 title('ԭͼ')
 %%
